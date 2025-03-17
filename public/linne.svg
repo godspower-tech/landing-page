@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <!-- Definitions for professional gradients and effects -->
+  <defs>
+    <!-- Sophisticated color gradients -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#1a1a2e" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="50%" stop-color="#2980b9" />
+      <stop offset="100%" stop-color="#3949ab" />
+    </linearGradient>
+    
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9d423" />
+      <stop offset="100%" stop-color="#e4a537" />
+    </linearGradient>
+    
+    <!-- Professional subtle glow -->
+    <filter id="professionalGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Elegant shadow -->
+    <filter id="elegantShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+      <feBlend mode="normal" in="SourceGraphic" result="effect" />
+    </filter>
+    
+    <!-- Professional background pattern -->
+    <pattern id="subtlePattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="#1a1a2e" />
+      <path d="M 0 25 L 50 25 M 25 0 L 25 50" stroke="#2c3e50" stroke-width="0.5" opacity="0.2" />
+    </pattern>
+  </defs>
+  
+  <!-- Professional background -->
+  <circle cx="250" cy="250" r="240" fill="url(#primaryGradient)" />
+  <circle cx="250" cy="250" r="240" fill="url(#subtlePattern)" opacity="0.5" />
+  
+  <!-- Central design element - hexagon (representing precision and technology) -->
+  <g transform="translate(250, 250)">
+    <path d="M0,-140 L121,-70 L121,70 L0,140 L-121,70 L-121,-70 Z" 
+          fill="none" 
+          stroke="url(#accentGradient)" 
+          stroke-width="2" 
+          opacity="0.7" />
+          
+    <!-- Inner hexagon -->
+    <path d="M0,-100 L87,-50 L87,50 L0,100 L-87,50 L-87,-50 Z" 
+          fill="none" 
+          stroke="url(#accentGradient)" 
+          stroke-width="1.5" 
+          opacity="0.5" />
+  </g>
+  
+  <!-- Professional GP Letters -->
+  <g transform="translate(250, 250)">
+    <!-- Elegant G -->
+    <path d="M-65,-50 C-90,-50 -110,-25 -110,0 C-110,35 -80,65 -45,65 C-10,65 15,40 15,0 L15,-15 L-45,-15 L-45,15 L-15,15 C-15,25 -30,35 -45,35 C-65,35 -80,20 -80,0 C-80,-15 -70,-25 -55,-25 C-40,-25 -30,-15 -30,0 L0,0 C0,-25 -30,-50 -65,-50 Z"
+          fill="url(#accentGradient)" 
+          filter="url(#professionalGlow)" />
+    
+    <!-- Elegant P -->
+    <path d="M30,-50 L30,65 L60,65 L60,15 L75,15 C100,15 120,-5 120,-20 C120,-35 100,-50 75,-50 Z M60,-25 L75,-25 C85,-25 90,-25 90,-17.5 C90,-10 85,-10 75,-10 L60,-10 Z"
+          fill="url(#accentGradient)" 
+          filter="url(#professionalGlow)" />
+  </g>
+  
+  <!-- Gold accent line -->
+  <path d="M175,260 Q250,280 325,260" 
+        fill="none" 
+        stroke="url(#goldAccent)" 
+        stroke-width="2"
+        opacity="0.8" />
+  
+  <!-- Professional dynamic elements -->
+  <g>
+    <!-- Subtle accent points -->
+    <circle cx="175" cy="260" r="3" fill="url(#goldAccent)" />
+    <circle cx="325" cy="260" r="3" fill="url(#goldAccent)" />
+    
+    <!-- Refined corner elements suggesting precision -->
+    <path d="M160,170 L170,170 L170,180" fill="none" stroke="url(#goldAccent)" stroke-width="1.5" />
+    <path d="M340,170 L330,170 L330,180" fill="none" stroke="url(#goldAccent)" stroke-width="1.5" />
+    <path d="M160,330 L170,330 L170,320" fill="none" stroke="url(#goldAccent)" stroke-width="1.5" />
+    <path d="M340,330 L330,330 L330,320" fill="none" stroke="url(#goldAccent)" stroke-width="1.5" />
+  </g>
+  
+  <!-- Professional accent rings -->
+  <circle cx="250" cy="250" r="200" fill="none" stroke="url(#accentGradient)" stroke-width="0.5" opacity="0.3" />
+  <circle cx="250" cy="250" r="210" fill="none" stroke="url(#accentGradient)" stroke-width="0.3" opacity="0.2" />
+  
+  <!-- Subtle light reflections for dimensional feel -->
+  <path d="M150,150 Q250,180 350,150" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.1" />
+  <path d="M150,350 Q250,320 350,350" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.1" />
+</svg>
