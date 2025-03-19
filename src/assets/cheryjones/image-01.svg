@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <!-- Base gradient background -->
+  <defs>
+    <linearGradient id="baseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF9C83" />
+      <stop offset="100%" stop-color="#F1AA94" />
+    </linearGradient>
+    
+    <!-- Pattern overlay -->
+    <pattern id="gridPattern" patternUnits="userSpaceOnUse" width="60" height="60" patternTransform="rotate(10)">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.12"/>
+    </pattern>
+    
+    <!-- Dots pattern -->
+    <pattern id="dotsPattern" patternUnits="userSpaceOnUse" width="30" height="30">
+      <circle cx="15" cy="15" r="1" fill="#FFFFFF" fill-opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1200" height="600" fill="url(#baseGradient)"/>
+  
+  <!-- Abstract shapes -->
+  <circle cx="100" cy="500" r="300" fill="#F7B5A1" opacity="0.4"/>
+  <circle cx="1100" cy="100" r="250" fill="#E58E77" opacity="0.3"/>
+  
+  <!-- Overlay patterns -->
+  <rect width="1200" height="600" fill="url(#gridPattern)"/>
+  <rect width="1200" height="600" fill="url(#dotsPattern)"/>
+  
+  <!-- Abstract lines -->
+  <path d="M0,150 Q300,250 600,150 T1200,250" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.1"/>
+  <path d="M0,350 Q300,450 600,350 T1200,450" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.1"/>
+  
+  <!-- Subtle accent elements -->
+  <rect x="950" y="50" width="200" height="5" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  <rect x="50" y="450" width="200" height="5" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  <rect x="750" y="350" width="5" height="200" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  <rect x="450" y="50" width="5" height="200" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  
+  <!-- Subtle digital marketing related icons -->
+  <g opacity="0.12" fill="#FFFFFF">
+    <path d="M200,200 h20 v20 h-20 z" /> <!-- squares representing digital blocks -->
+    <path d="M250,200 h20 v20 h-20 z" />
+    <path d="M200,250 h20 v20 h-20 z" />
+    <path d="M250,250 h20 v20 h-20 z" />
+    
+    <path d="M900,400 h20 v20 h-20 z" />
+    <path d="M950,400 h20 v20 h-20 z" />
+    <path d="M900,450 h20 v20 h-20 z" />
+    <path d="M950,450 h20 v20 h-20 z" />
+  </g>
+</svg>
