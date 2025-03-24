@@ -13,6 +13,9 @@ const CheryJones = () => {
       <Navbar />
       <Hero />
       <About />
+      <Testimonials />
+      <CallToAction/>
+      <Footer/>
     </div>
   )
 }
