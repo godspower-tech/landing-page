@@ -10,7 +10,6 @@ import {
   Play,
   MousePointer
 } from 'lucide-react';
-import Navbar from './Navbar'; // Import your existing Navbar
 
 const EnhancedHero = () => {
   const { isDarkMode } = useTheme();
@@ -70,10 +69,7 @@ const EnhancedHero = () => {
   };
 
   return (
-    <div className={`relative overflow-hidden ${isDarkMode ? 'bg-gray-950' : ''}`} ref={heroRef}>
-      {/* Navbar Integration */}
-      <Navbar />
-      
+    <div className={`relative overflow-hidden ${isDarkMode ? 'bg-gray-950' : ''}`} ref={heroRef}>      
       {/* Hero Section Main Content */}
       <div className="relative min-h-screen pt-24 flex flex-col justify-center overflow-hidden">
         {/* Animated Background Elements */}
@@ -122,7 +118,7 @@ const EnhancedHero = () => {
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-50 dark:to-gray-400 leading-tight">
                 Crafting Digital <br/>
                 <span className="relative inline-block">
-                  <span className="relative z-10">Experiences</span>
+                  <span className="relative z-10 text-green-600">Experiences</span>
                   <svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 385 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M384 6C329.167 6 276.5 11 215.5 11C154.5 11 79.5 6 36.5 6C13.5 6 1 6 1 6" 
                       stroke={isDarkMode ? "#6d28d9" : "#F97316"} 

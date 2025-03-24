@@ -234,6 +234,7 @@ const Navbar = () => {
                             <div key={index} className="relative group/tooltip">
                                 <a
                                     href={social.href}
+                                    target="_blank"
                                     className="block p-1.5 hover:scale-110 hover:-translate-y-1 duration-300 transition-all bg-white/10 dark:bg-indigo-900/30 rounded-full hover:bg-orange-500/20 dark:hover:bg-purple-500/30 md:text-gray-700 md:dark:text-gray-300 md:bg-gray-200/50 md:dark:bg-gray-800/50"
                                     aria-label={social.label}
                                 >
