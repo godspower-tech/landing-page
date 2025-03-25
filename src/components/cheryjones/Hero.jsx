@@ -11,7 +11,7 @@ import {
   MousePointer
 } from 'lucide-react';
 
-const EnhancedHero = () => {
+const Hero = () => {
   const { isDarkMode } = useTheme();
   const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -339,4 +339,4 @@ const EnhancedHero = () => {
   );
 };
 
-export default EnhancedHero;
+export default Hero;

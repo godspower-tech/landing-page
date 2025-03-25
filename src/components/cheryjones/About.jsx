@@ -203,9 +203,9 @@ const About = () => {
           
           {/* Main Content Tabs */}
           <div className={`lg:col-span-2 transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl dark:shadow-2xl dark:shadow-violet-950/10 border border-gray-200 dark:border-gray-800 h-full">
+            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl p-4 py-6 sm:p-6 shadow-xl dark:shadow-2xl dark:shadow-violet-950/10 border border-gray-200 dark:border-gray-800 h-full">
               {/* Tab Navigation */}
-              <div className="flex space-x-1 bg-gray-100 dark:bg-gray-800/60 rounded-lg p-1 mb-6">
+              <div className="flex flex-wrap space-x-1 bg-gray-100 dark:bg-gray-800/60 rounded-lg p-1 mb-6">
                 {[
                   { id: 'skills', label: 'Skills', icon: <Code2 size={16} /> },
                   { id: 'experience', label: 'Experience', icon: <Briefcase size={16} /> },
@@ -213,7 +213,7 @@ const About = () => {
                 ].map((tab) => (
                   <button
                     key={tab.id}
-                    className={`flex items-center justify-center space-x-1.5 flex-1 py-2 px-3 text-sm font-medium rounded-md transition-all duration-200 ${
+                    className={`flex items-center justify-center space-x-1.5 flex-1 py-2 px-3 sm:px-3 text-xs sm:text-sm font-medium rounded-md transition-all duration-200 ${
                       activeTab === tab.id
                         ? 'bg-white dark:bg-gray-900 text-orange-600 dark:text-indigo-400 shadow-sm'
                         : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'

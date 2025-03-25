@@ -15,6 +15,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { useInView } from 'react-intersection-observer';
 
 const Footer = () => {
+    const {isDarkMode} = useTheme();
     const [isVisible, setIsVisible] = useState(false);
     const [email, setEmail] = useState('');
     const [subscribeStatus, setSubscribeStatus] = useState(null);
